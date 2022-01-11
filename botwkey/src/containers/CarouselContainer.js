@@ -124,16 +124,20 @@ function CarouselContainer() {
           <div className="background-block"></div>
 
           {data.creatures.map((creature, n) => {
+            let indexDiff = index - n;
+            let leftMostIdx = 0;
+            let rightMostIdx = dataLength - 1;
             let position =
-              index === 0 && n === dataLength - 1
-                ? "prevCard"
-                : index === dataLength - 1 && n === 0
-                ? "nextCard"
-                : n > index
-                ? "nextCard"
-                : n === index
+              index === n
                 ? "activeCard"
-                : "prevCard";
+                : (index === leftMostIdx && n === rightMostIdx) ||
+                  indexDiff === 1
+                ? "prevCard"
+                : (index === rightMostIdx && n === leftMostIdx) ||
+                  indexDiff === -1
+                ? "nextCard"
+                : "hiddenCard";
+
             return (
               <Card
                 key={n}

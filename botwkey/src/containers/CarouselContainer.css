@@ -79,6 +79,11 @@ article {
   aspect-ratio: 2.5 / 3.5;
 }
 
+.hiddenCard .card {
+  width: 100%;
+  aspect-ratio: 2.5 / 3.5;
+}
+
 .card:hover {
   cursor: pointer;
 }
@@ -90,6 +95,10 @@ article {
   object-position: top;
 
   pointer-events: none;
+}
+
+.hiddenCard {
+  opacity: 0;
 }
 
 .prevCard {
