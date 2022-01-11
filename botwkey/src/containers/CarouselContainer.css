@@ -69,12 +69,8 @@ article {
   user-select: none;
 }
 
-.prevCard .card {
-  width: 100%;
-  aspect-ratio: 2.5 / 3.5;
-}
-
 .nextCard .card {
+  position: absolute;
   width: 100%;
   aspect-ratio: 2.5 / 3.5;
 }
@@ -96,6 +92,14 @@ article {
   left: 0;
   opacity: 0.3;
   z-index: -1;
+}
+
+.prevCard .card {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2.5 / 3.5;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .activeCard {
