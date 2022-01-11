@@ -1,10 +1,10 @@
-import React from 'react';
-import App from './App';
+import React from "react";
+import CarouselContainer from "./CarouselContainer";
 
 function HomeContainer() {
   return (
     <div className="home-container">
-      <p> Home Container will go here</p>
+      <CarouselContainer />
     </div>
   );
 }
