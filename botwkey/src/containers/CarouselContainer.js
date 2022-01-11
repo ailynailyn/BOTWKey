@@ -112,6 +112,11 @@ function CarouselContainer() {
     }
   };
 
+  // INDEX = ACTIVE CARD INDEX
+  // n = curret card in map
+  let leftMostIdx = 0;
+  let rightMostIdx = dataLength - 1;
+
   return (
     <div className="CarouselContainer">
       <div className="container">
@@ -125,8 +130,7 @@ function CarouselContainer() {
 
           {data.creatures.map((creature, n) => {
             let indexDiff = index - n;
-            let leftMostIdx = 0;
-            let rightMostIdx = dataLength - 1;
+
             let position =
               index === n
                 ? "activeCard"
@@ -138,14 +142,16 @@ function CarouselContainer() {
                 ? "nextCard"
                 : "hiddenCard";
 
-            return (
-              <Card
-                key={n}
-                handlePointerEvent={handlePointerEvent}
-                {...creature}
-                cardStyle={position}
-              />
-            );
+            if (position !== "hiddenCard") {
+              return (
+                <Card
+                  key={n}
+                  handlePointerEvent={handlePointerEvent}
+                  {...creature}
+                  cardStyle={position}
+                />
+              );
+            }
           })}
         </div>
       </div>
