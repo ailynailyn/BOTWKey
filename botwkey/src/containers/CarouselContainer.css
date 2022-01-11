@@ -88,15 +88,6 @@ article {
   cursor: pointer;
 }
 
-.card img {
-  width: 80%;
-
-  object-fit: cover;
-  object-position: top;
-
-  pointer-events: none;
-}
-
 .hiddenCard {
   opacity: 0;
 }

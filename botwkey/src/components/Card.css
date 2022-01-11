@@ -1,0 +1,81 @@
+html {
+  width: 100%;
+}
+
+.card-header {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  height: 10%;
+  background-color: yellow;
+}
+
+.card-middle {
+  height: 65%;
+  width: 75%;
+  margin: auto;
+}
+
+.card-hearts {
+  width: 75%;
+  width: 100%;
+  height: 7%;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.card-hearts img {
+  height: 100%;
+  text-align: right;
+
+  aspect-ratio: 1;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.card-image {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-image img {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: top;
+
+  pointer-events: none;
+}
+
+.card-stats {
+  width: 100%;
+  height: 7%;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.card-stats img {
+  aspect-ratio: 1;
+  height: 100%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.card-footer {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+
+  height: fit-content;
+  background-color: yellow;
+}
+
+.footer-title {
+  margin-left: 1rem;
+  text-align: left;
+  word-wrap: break-word;
+  font-size: larger;
+}
