@@ -1,7 +1,6 @@
 import React from "react";
 import App from "./App";
 import Card from "../components/Card";
-import Paginator from "../components/Paginator";
 import { data } from "../Data";
 import "./CarouselContainer.css";
 
@@ -148,11 +147,6 @@ function CarouselContainer() {
             }
           })}
         </div>
-        <Paginator
-          dataLength={dataLength}
-          activeIndex={index}
-          handlePageChange={handlePageChange}
-        />
       </div>
     </div>
   );
