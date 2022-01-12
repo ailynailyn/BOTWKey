@@ -54,6 +54,7 @@ article {
 .card {
   position: absolute;
 
+  width: 100%;
   aspect-ratio: 2.5 / 3.5;
 
   margin: 0;
@@ -93,6 +94,27 @@ article {
   left: 0;
   opacity: 0.3;
   z-index: -1;
+  aspect-ratio: 2.5 / 3.5;
+  height: auto;
+}
+
+.activeCard {
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  min-width: 320px;
+  width: 50%;
+  aspect-ratio: 2.5 / 3.5;
+  height: auto;
+}
+
+.nextCard {
+  left: 100%;
+  transform: translateX(-100%);
+  opacity: 0.3;
+  z-index: -1;
+  aspect-ratio: 2.5 / 3.5;
+  height: auto;
 }
 
 .prevCard .card {
@@ -111,27 +133,12 @@ article {
   overflow: hidden;
 }
 
-.activeCard {
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
-  min-width: 320px;
-  width: 50%;
-}
-
 .activeCard .card {
   position: absolute;
   width: 100%;
   aspect-ratio: 2.5 / 3.5;
   object-fit: cover;
   overflow: hidden;
-}
-
-.nextCard {
-  left: 100%;
-  transform: translateX(-100%);
-  opacity: 0.3;
-  z-index: -1;
 }
 
 /* Carousel buttons */
