@@ -120,14 +120,8 @@ function CarouselContainer() {
   return (
     <div className="CarouselContainer">
       <div className="container">
+        <div className="background-block"></div>
         <div className="carousel-container">
-          <Paginator
-            dataLength={dataLength}
-            activeIndex={index}
-            handlePageChange={handlePageChange}
-          />
-          <div className="background-block"></div>
-
           {data.creatures.map((creature, n) => {
             let indexDiff = index - n;
 
@@ -154,6 +148,11 @@ function CarouselContainer() {
             }
           })}
         </div>
+        <Paginator
+          dataLength={dataLength}
+          activeIndex={index}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </div>
   );
