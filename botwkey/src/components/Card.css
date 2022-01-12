@@ -3,12 +3,11 @@ html {
 }
 
 .card-header {
-  margin-top: 1.5rem;
+  margin-top: 5%;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 0.5rem;
   display: flex;
-  height: 10%;
+  height: 16%;
   background-color: yellow;
 }
 
@@ -19,13 +18,13 @@ html {
 .card-header p {
   display: inline;
   width: 100vw;
-  height: 100vh;
   font-size: 2.5vw;
   text-align: left;
+  max-height: 100%;
 }
 
 .card-middle {
-  height: 65%;
+  height: 55%;
   width: 75%;
   margin: auto;
 }
@@ -50,10 +49,11 @@ html {
 .card-image {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  height: 72%;
 }
 
 .card-image img {
-  width: 100%;
+  height: 100%;
 
   object-fit: cover;
   object-position: top;
@@ -78,10 +78,9 @@ html {
 .card-footer {
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 0.5rem;
   display: flex;
-
-  height: fit-content;
+  margin-bottom: 4.16%;
+  height: 24%;
   background-color: yellow;
 }
 
