@@ -1,12 +1,14 @@
-import React from 'react';
-import '../App.css';
-import HomeContainer from './HomeContainer'
-import Nav from './Nav'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "../App.css";
+import HomeContainer from "./HomeContainer";
+import BOTWNavBar from "./BOTWNavBar";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <BOTWNavBar />
       <HomeContainer />
     </div>
   );

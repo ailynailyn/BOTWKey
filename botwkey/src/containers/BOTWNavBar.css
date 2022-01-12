@@ -1,0 +1,32 @@
+.botw-navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+  padding-top: 1rem;
+}
+
+#offcanvasNavbar {
+  height: 100vh;
+  overflow: auto;
+}
+
+.offcanvas-header {
+  height: 10vh;
+}
+
+.offcanvas-body {
+  height: 90vh;
+  justify-content: space-around;
+}
+
+.offcanvas-categories {
+  height: 80vh;
+}
+
+.search-bar {
+  height: 10vh;
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
