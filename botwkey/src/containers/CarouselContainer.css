@@ -54,7 +54,6 @@ article {
 .card {
   position: absolute;
 
-  width: 40rem;
   aspect-ratio: 2.5 / 3.5;
 
   margin: 0;
@@ -116,7 +115,16 @@ article {
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
-  width: 40rem;
+  min-width: 320px;
+  width: 50%;
+}
+
+.activeCard .card {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2.5 / 3.5;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .nextCard {
