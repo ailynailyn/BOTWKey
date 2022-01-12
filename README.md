@@ -9,3 +9,7 @@ https://github.com/gadhagod/Hyrule-Compendium-API
 In terminal: 
 - `cd botwkey`
 - `npm start`
+
+# Dependencies
+- React Bootstrap
+  - `npm install react-bootstrap bootstrap@5.1.3`
