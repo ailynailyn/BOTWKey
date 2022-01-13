@@ -17,6 +17,8 @@ In terminal:
   -https://robomongo.org/
 - Install LoopBack CLI via NPM
   -https://www.freecodecamp.org/news/build-restful-api-with-authentication-under-5-minutes-using-loopback-by-expressjs-no-programming-31231b8472ca/
+- Install react router for linking to another page.
+  - `npm i react-router-dom`
   
 # Posting Data
 1. Obtain POST url from Loopback API Explorer
