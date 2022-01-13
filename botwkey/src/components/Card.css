@@ -1,5 +1,6 @@
 html {
   width: 100%;
+  --card-footer-bg: rgba(0, 0, 0, 0.9);
 }
 
 .card {
@@ -27,12 +28,12 @@ html {
 }
 
 .card-header {
+  margin: auto;
   margin-top: 5%;
-  margin-left: 2rem;
-  margin-right: 2rem;
   display: flex;
   height: 16%;
   background-color: yellow;
+  width: 85%;
 }
 
 .card-header img {
@@ -83,7 +84,6 @@ html {
   object-position: top;
 
   pointer-events: none;
-  border-radius: 50%;
 }
 
 .card-stats {
@@ -106,10 +106,23 @@ html {
   display: flex;
   margin-bottom: 4.16%;
   height: 24%;
-  background-color: yellow;
+  background-color: var(--card-footer-bg);
 }
 
-.footer-title {
+.footer-text {
   text-align: left;
   word-wrap: break-word;
+  width: 100%;
+}
+
+.footer-text h5 {
+  color: gold;
+  margin-bottom: 0;
+  font-size: 1vh;
+}
+
+.footer-text p {
+  color: white;
+  font-size: 0.3vh;
+  margin-bottom: 2%;
 }
