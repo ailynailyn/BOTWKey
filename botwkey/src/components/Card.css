@@ -1,5 +1,6 @@
 html {
   width: 100%;
+  --card-header-bg: rgba(0, 0, 0, 0.9);
   --card-footer-bg: rgba(0, 0, 0, 0.9);
 }
 
@@ -32,7 +33,7 @@ html {
   margin-top: 5%;
   display: flex;
   height: 16%;
-  background-color: yellow;
+  background-color: var(--card-header-bg);
   width: 85%;
 }
 
@@ -46,17 +47,18 @@ html {
   font-size: 2.5vw;
   text-align: left;
   max-height: 100%;
+  color: gold;
 }
 
 .card-middle {
   height: 48%;
-  width: 75%;
+  width: 100%;
   margin: auto;
 }
 
 .card-hearts {
-  width: 75%;
-  width: 100%;
+  margin: auto;
+  width: 85%;
   height: 7%;
   text-align: right;
   margin-bottom: 0;
@@ -87,15 +89,17 @@ html {
 }
 
 .card-stats {
-  width: 100%;
+  margin: auto;
+  width: 80%;
   height: 7%;
   text-align: right;
   margin-bottom: 0;
 }
 
 .card-stats img {
-  aspect-ratio: 1;
   height: 100%;
+  text-align: right;
+  aspect-ratio: 1;
   margin-right: 0;
   margin-left: auto;
 }
