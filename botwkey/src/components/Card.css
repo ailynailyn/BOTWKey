@@ -2,6 +2,30 @@ html {
   width: 100%;
 }
 
+.card {
+  position: absolute;
+
+  width: 100%;
+  aspect-ratio: 2.5 / 3.5;
+
+  margin: 0;
+
+  background-color: black;
+
+  border-radius: 1rem;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  box-sizing: border-box;
+
+  user-select: none;
+  background-image: url(../images/cardPattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .card-header {
   margin-top: 5%;
   margin-left: 2rem;
@@ -59,6 +83,7 @@ html {
   object-position: top;
 
   pointer-events: none;
+  border-radius: 50%;
 }
 
 .card-stats {
@@ -85,8 +110,6 @@ html {
 }
 
 .footer-title {
-  margin-left: 1rem;
   text-align: left;
   word-wrap: break-word;
-  font-size: larger;
 }

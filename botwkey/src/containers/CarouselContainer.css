@@ -51,26 +51,6 @@ article {
   transition: all 1s;
 }
 
-.card {
-  position: absolute;
-
-  width: 100%;
-  aspect-ratio: 2.5 / 3.5;
-
-  margin: 0;
-
-  background-color: gray;
-
-  border-radius: 1rem;
-
-  text-align: center;
-  text-transform: capitalize;
-
-  box-sizing: border-box;
-
-  user-select: none;
-}
-
 .nextCard .card {
   position: absolute;
   width: 100%;

@@ -25,9 +25,9 @@ const Card = ({ handlePointerEvent, name, image, cardStyle }) => {
         </div>
         <div className="card-footer">
           <div className="footer-title">
-            <p>DESCRIPTION</p>
-            <p>DROPS</p>
-            <p>COMMON LOCATIONS</p>
+            <h5>DESCRIPTION</h5>
+            <h5>DROPS</h5>
+            <h5>COMMON LOCATIONS</h5>
           </div>
         </div>
       </div>
