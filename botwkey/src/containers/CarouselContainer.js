@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "../components/Card";
-import { data } from "../Data";
 import "./CarouselContainer.css";
 
 import { useState } from "react";
 
-function CarouselContainer() {
+function CarouselContainer(props) {
   const [index, setIndex] = useState(0);
+  const data = props.data;
 
-  const dataLength = data.creatures.length;
+  const dataLength = data.length;
 
   const slideLeft = () => {
     if (index - 1 >= 0) {
@@ -120,7 +120,7 @@ function CarouselContainer() {
       <div className="container">
         <div className="background-block"></div>
         <div className="carousel-container">
-          {data.creatures.map((creature, n) => {
+          {data.map((curItem, n) => {
             let indexDiff = index - n;
 
             let position =
@@ -139,7 +139,7 @@ function CarouselContainer() {
                 <Card
                   key={n}
                   handlePointerEvent={handlePointerEvent}
-                  {...creature}
+                  {...curItem}
                   cardStyle={position}
                 />
               );

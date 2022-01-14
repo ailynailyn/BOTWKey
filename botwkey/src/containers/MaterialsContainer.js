@@ -1,11 +1,15 @@
 import React from "react";
 import BOTWNavBar from "./BOTWNavBar";
+import ItemsTableContainer from "./ItemsTableContainer";
+import CategoryTitle from "../components/CategoryTitle";
+import { data } from "../Data";
 
 function MaterialsContainer() {
   return (
     <div className="materials-container">
       <BOTWNavBar />
-      <p> Materials Container will go here</p>
+      <CategoryTitle category="Materials" />
+      <ItemsTableContainer data={data.materials} />
     </div>
   );
 }

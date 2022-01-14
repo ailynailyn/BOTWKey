@@ -1,13 +1,13 @@
 import React from "react";
-import { data } from "../Data";
 import "./ItemsTableContainer.css";
 import { Card, Row, Col } from "react-bootstrap";
 
-function ItemsTableContainer() {
+function ItemsTableContainer(props) {
+  const data = props.data;
   return (
     <div className="ItemsTableContainer">
       <Row xs={4}>
-        {data.equipment.map((curItem, n) => {
+        {data.map((curItem, n) => {
           return (
             <Col>
               <Card className="tableItemCard">
