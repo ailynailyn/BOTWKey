@@ -1,11 +1,7 @@
 import React from "react";
 import "./BOTWNavBar.css";
-import TabButton from "../components/TabButton";
 import {
   Nav,
-  NavItem,
-  NavDropdown,
-  MenuItem,
   Container,
   Offcanvas,
   Form,
@@ -14,8 +10,37 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function BOTWNavBar() {
+  let navigate = useNavigate();
+  function clickHome() {
+    navigate("/");
+  }
+
+  function clickCarousel() {
+    navigate("/carousel");
+  }
+
+  function clickMonsters() {
+    navigate("/monsters");
+  }
+
+  function clickCreatures() {
+    navigate("/creatures");
+  }
+
+  function clickEquipment() {
+    navigate("/equipment");
+  }
+
+  function clickMaterials() {
+    navigate("/materials");
+  }
+
+  function clickTreasure() {
+    navigate("/treasure");
+  }
   return (
     <Navbar className="botw-navbar" sticky="top" expand={false}>
       <Container fluid>
@@ -27,19 +52,19 @@ function BOTWNavBar() {
           placement="end"
         >
           <Offcanvas.Header closeButton className="offcanvas-header">
-            <Offcanvas.Title id="offcanvasNavbarLabel">
+            <Offcanvas.Title id="offcanvasNavbarLabel" onClick={clickHome}>
               Insert Logo
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="offcanvas-body">
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <ButtonGroup vertical className="offcanvas-categories">
-                <Button>Creatures</Button>
-                <Button>Equipment</Button>
-                <Button>Materials</Button>
-                <Button>Monsters</Button>
-                <Button>Treasure</Button>
-                <Button>Hyrule Map</Button>
+                <Button onClick={clickCreatures}>Creatures</Button>
+                <Button onClick={clickEquipment}>Equipment</Button>
+                <Button onClick={clickMaterials}>Materials</Button>
+                <Button onClick={clickMonsters}>Monsters</Button>
+                <Button onClick={clickTreasure}>Treasure</Button>
+                <Button onClick={clickHome}>Hyrule Map</Button>
               </ButtonGroup>
             </Nav>
             <Form className="d-flex">
