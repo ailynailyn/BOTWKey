@@ -1,5 +1,4 @@
 import React from "react";
-import App from "./App";
 import Card from "../components/Card";
 import { data } from "../Data";
 import "./CarouselContainer.css";
