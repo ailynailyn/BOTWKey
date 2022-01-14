@@ -1,5 +1,4 @@
 import React from "react";
-import "./BOTWNavBar.css";
 import {
   Nav,
   Container,
@@ -11,6 +10,7 @@ import {
 } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import { Navigate, useNavigate } from "react-router-dom";
+import "./BOTWNavBar.css";
 
 function BOTWNavBar() {
   let navigate = useNavigate();

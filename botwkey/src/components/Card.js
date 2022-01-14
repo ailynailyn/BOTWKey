@@ -4,26 +4,26 @@ const Card = ({ handlePointerEvent, name, image, cardStyle }) => {
   return (
     <article className={cardStyle}>
       <div
-        className="card"
+        className="botw-card"
         onMouseDown={handlePointerEvent}
         onTouchStart={handlePointerEvent}
       >
-        <div className="card-header">
+        <div className="botw-card-header">
           <p>{name}</p>
           <img src={image} alt={name} />
         </div>
-        <div className="card-middle">
-          <div className="card-hearts">
+        <div className="botw-card-middle">
+          <div className="botw-card-hearts">
             <img src={image} alt={name} />
           </div>
-          <div className="card-image">
+          <div className="botw-card-image">
             <img src={image} alt={name} />
           </div>
-          <div className="card-stats">
+          <div className="botw-card-stats">
             <img src={image} alt={name} />
           </div>
         </div>
-        <div className="card-footer">
+        <div className="botw-card-footer">
           <div className="footer-text">
             <h5>DESCRIPTION</h5>
             <p>
