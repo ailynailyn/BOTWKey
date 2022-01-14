@@ -24,4 +24,5 @@ In terminal:
 1. Obtain POST url from Loopback API Explorer
 2. Created postToDb.js file to post all instances of each model to mongoDB Atlas database
 3. Need to download XMLHTTPrequest: npm install xmlhttprequest --save
-4. 
+4. Add: var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
