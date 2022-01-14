@@ -9,6 +9,7 @@ import MonstersContainer from "./containers/MonstersContainer";
 import MaterialsContainer from "./containers/MaterialsContainer";
 import EquipmentContainer from "./containers/EquipmentContainer";
 import TreasureContainer from "./containers/TreasureContainer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <Router>
