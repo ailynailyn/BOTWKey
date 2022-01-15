@@ -1,14 +1,13 @@
-import React from "react";
+import { React } from "react";
 import BOTWNavBar from "./BOTWNavBar";
 import CarouselContainer from "./CarouselContainer";
+import { useHistory, useParams } from "react-router-dom";
 
-function HomeContainer(props) {
-  let itemId = this.props.match.params.id;
-
+function HomeContainer() {
   return (
     <div className="home-container">
       <BOTWNavBar />
-      <CarouselContainer itemId={itemId} data={props.data} />
+      <CarouselContainer />
     </div>
   );
 }

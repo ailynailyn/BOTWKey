@@ -1,18 +1,19 @@
 import React from "react";
 import Card from "../components/Card";
 import "./CarouselContainer.css";
+import { data } from "../Data";
 
 import { useState } from "react";
 
-function CarouselContainer(props) {
+function CarouselContainer() {
   const [index, setIndex] = useState(0);
   // Need to pass in only X amount of items to be working with.
   // Need to set the current one as the active one.
   // Loop through the passed in data, storing the item id?
-  const data = props.data;
-  const itemId = props.itemId;
+  const carouselData = data.creatures;
+  // const itemId = props.itemId;
 
-  const dataLength = data.length;
+  const dataLength = carouselData.length;
 
   const slideLeft = () => {
     if (index - 1 >= 0) {
@@ -123,7 +124,7 @@ function CarouselContainer(props) {
       <div className="container">
         <div className="background-block"></div>
         <div className="carousel-container">
-          {data.map((curItem, n) => {
+          {carouselData.map((curItem, n) => {
             let indexDiff = index - n;
 
             let position =
