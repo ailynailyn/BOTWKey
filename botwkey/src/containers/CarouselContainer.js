@@ -6,7 +6,11 @@ import { useState } from "react";
 
 function CarouselContainer(props) {
   const [index, setIndex] = useState(0);
+  // Need to pass in only X amount of items to be working with.
+  // Need to set the current one as the active one.
+  // Loop through the passed in data, storing the item id?
   const data = props.data;
+  const itemId = props.itemId;
 
   const dataLength = data.length;
 
@@ -20,7 +24,6 @@ function CarouselContainer(props) {
 
   const slideRight = () => {
     if (index + 1 <= dataLength - 1) {
-      // temp add creatures hardcode todo
       setIndex(index + 1);
     } else {
       setIndex(0);

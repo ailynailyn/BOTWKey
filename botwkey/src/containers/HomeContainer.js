@@ -2,11 +2,13 @@ import React from "react";
 import BOTWNavBar from "./BOTWNavBar";
 import CarouselContainer from "./CarouselContainer";
 
-function HomeContainer() {
+function HomeContainer(props) {
+  let itemId = this.props.match.params.id;
+
   return (
     <div className="home-container">
       <BOTWNavBar />
-      <CarouselContainer />
+      <CarouselContainer itemId={itemId} data={props.data} />
     </div>
   );
 }

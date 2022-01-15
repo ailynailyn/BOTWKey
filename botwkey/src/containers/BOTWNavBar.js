@@ -64,7 +64,6 @@ function BOTWNavBar() {
                 <Button onClick={clickMaterials}>Materials</Button>
                 <Button onClick={clickMonsters}>Monsters</Button>
                 <Button onClick={clickTreasure}>Treasure</Button>
-                <Button onClick={clickHome}>Hyrule Map</Button>
               </ButtonGroup>
             </Nav>
             <Form className="d-flex">

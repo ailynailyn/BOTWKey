@@ -2,19 +2,6 @@ import React from "react";
 import "./HomeScreenContainer.css";
 import { Navigate, useNavigate } from "react-router-dom";
 
-import {
-  clickHome,
-  clickCreatures,
-  clickMaterials,
-  clickMonsters,
-  clickEquipment,
-  clickTreasure,
-} from "../Functions";
-
-// function Redirect() {
-//   return <Navigate to="/home" replace />;
-// }
-
 function HomeScreenContainer() {
   let navigate = useNavigate();
   function clickHome() {
