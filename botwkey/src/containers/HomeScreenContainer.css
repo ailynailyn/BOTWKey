@@ -41,7 +41,7 @@
 }
 
 .item {
-  transform: rotateX(45deg) scale(0.7);
+  transform: rotateX(40deg) scale(0.7);
   background-color: #192734;
   border-radius: 0.4rem;
   overflow: hidden;
@@ -58,52 +58,36 @@
   z-index: 400;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
 }
+.card {
+  position: relative;
+}
 .card__img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card__content {
-  padding: 3rem 3rem;
-}
-.card__header {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
-.card__text {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.7;
-  color: #8899a6;
-  margin-bottom: 2.5rem;
-}
-.card__btn {
-  display: block;
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
   width: 100%;
-  padding: 1.5rem;
-  font-size: 2rem;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
-  color: #3363ff;
-  background-color: #e6ecff;
-  border: none;
-  border-radius: 0.4rem;
-  transition: 0.2s;
-  cursor: pointer;
 }
-.card__btn span {
-  margin-left: 1rem;
-  transition: 0.2s;
-}
-.card__btn:hover,
-.card__btn:active {
-  background-color: #dce4ff;
-}
-.card__btn:hover span,
-.card__btn:active span {
-  margin-left: 1.5rem;
+
+/* When you mouse over the container, fade in the overlay title */
+.item:hover .overlay {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {

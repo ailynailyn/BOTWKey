@@ -41,27 +41,52 @@ function HomeScreenContainer() {
         <div className="cardGroupContainer">
           <div class="item">
             <div class="card" onClick={clickCreatures}>
-              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <img
+                class="card__img"
+                src={cardPattern}
+                alt="Category Monsters"
+              />
+              <div class="overlay">CREATURES</div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickMonsters}>
-              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <img
+                class="card__img"
+                src={cardPattern}
+                alt="Category Monsters"
+              />
+              <div class="overlay">MONSTERS</div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickMaterials}>
-              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <img
+                class="card__img"
+                src={cardPattern}
+                alt="Category Materials"
+              />{" "}
+              <div class="overlay">MATERIALS</div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickEquipment}>
-              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <img
+                class="card__img"
+                src={cardPattern}
+                alt="Category Equipment"
+              />{" "}
+              <div class="overlay">EQUIPMENT</div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickTreasure}>
-              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <img
+                class="card__img"
+                src={cardPattern}
+                alt="Category Treasure"
+              />{" "}
+              <div class="overlay">TREASURE</div>
             </div>
           </div>
         </div>
