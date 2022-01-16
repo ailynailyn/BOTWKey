@@ -9,7 +9,6 @@ function HomeContainer() {
   return (
     <div className="home-container">
       <BOTWNavBar />
-
       <CarouselContainer itemId={itemId} />
     </div>
   );
