@@ -42,7 +42,14 @@ ReactDOM.render(
         path="/treasure/:id"
         element={<HomeContainer data={data.treasure} />}
       /> */}
-      <Route path="/creatures/:id" element={<HomeContainer />} />
+      <Route path="/testing/:itemId" element={<HomeContainer />} />
+      <Route
+        exact
+        path="/creatures/:id"
+        render={(props) => (
+          <HomeContainer categoryId={global.CREATURES} {...props} />
+        )}
+      />
     </Routes>
   </Router>,
 

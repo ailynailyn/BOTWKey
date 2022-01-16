@@ -4,10 +4,13 @@ import CarouselContainer from "./CarouselContainer";
 import { useHistory, useParams } from "react-router-dom";
 
 function HomeContainer() {
+  const { itemId } = useParams();
+
   return (
     <div className="home-container">
       <BOTWNavBar />
-      <CarouselContainer />
+
+      <CarouselContainer itemId={itemId} />
     </div>
   );
 }

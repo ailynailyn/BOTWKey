@@ -5,11 +5,14 @@ import { data } from "../Data";
 
 import { useState } from "react";
 
-function CarouselContainer() {
+function CarouselContainer(props) {
   const [index, setIndex] = useState(0);
+  const itemId = props.itemId;
+  console.log(itemId);
   // Need to pass in only X amount of items to be working with.
   // Need to set the current one as the active one.
   // Loop through the passed in data, storing the item id?
+
   const carouselData = data.creatures;
   // const itemId = props.itemId;
 
