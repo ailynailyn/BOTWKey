@@ -42,55 +42,26 @@ function HomeScreenContainer() {
           <div class="item">
             <div class="card" onClick={clickCreatures}>
               <img class="card__img" src={cardPattern} alt="Green Forests" />
-              <div class="card__content">
-                <button class="card__btn">
-                  Explore<span>&rarr;</span>
-                </button>
-              </div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickMonsters}>
               <img class="card__img" src={cardPattern} alt="Green Forests" />
-
-              <div class="card__content">
-                <button class="card__btn">
-                  Explore<span>&rarr;</span>
-                </button>
-              </div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickMaterials}>
               <img class="card__img" src={cardPattern} alt="Green Forests" />
-
-              <div class="card__content">
-                <button class="card__btn">
-                  Explore<span>&rarr;</span>
-                </button>
-              </div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickEquipment}>
               <img class="card__img" src={cardPattern} alt="Green Forests" />
-
-              <div class="card__content">
-                <button class="card__btn">
-                  Explore<span>&rarr;</span>
-                </button>
-              </div>
             </div>
           </div>
           <div class="item">
             <div class="card" onClick={clickTreasure}>
               <img class="card__img" src={cardPattern} alt="Green Forests" />
-
-              <div class="card__content">
-                <button class="card__btn">
-                  Explore<span>&rarr;</span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
