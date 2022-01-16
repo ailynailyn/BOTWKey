@@ -47,9 +47,10 @@
 .homeScreenCard {
   flex: 0 1 calc(20% - 1em);
   background: white;
+  min-width: 250px;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 450px) {
   .categories {
     display: flex;
     flex-wrap: wrap;
@@ -57,11 +58,11 @@
   }
 
   .homeScreenCard {
-    flex: 0 1 calc(50% - 1em);
+    flex: 0 1 calc(100% - 1em);
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 680px) {
   .homeScreenCard {
     flex: 0 1 calc(20% - 1em);
   }
