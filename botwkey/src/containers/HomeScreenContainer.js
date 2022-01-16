@@ -6,24 +6,25 @@ import CardGroup from "react-bootstrap/CardGroup";
 import botwPhoto from "../images/sheikah.jpeg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import cardPattern from "../images/cardPattern.png";
 
 function HomeScreenContainer() {
   let navigate = useNavigate();
-
-  function clickMonsters() {
-    navigate("/monsters");
-  }
 
   function clickCreatures() {
     navigate("/creatures");
   }
 
-  function clickEquipment() {
-    navigate("/equipment");
+  function clickMonsters() {
+    navigate("/monsters");
   }
 
   function clickMaterials() {
     navigate("/materials");
+  }
+
+  function clickEquipment() {
+    navigate("/equipment");
   }
 
   function clickTreasure() {
@@ -37,38 +38,65 @@ function HomeScreenContainer() {
         <h4>The ultimate guide into Hyrule</h4>
       </div>
       <div className="body">
-        <Row sm={3} xs={1} md={5} className="cardGroupContainer">
-          {/* <CardGroup className="cardGroupContainer"> */}
-          <Col>
-            <div className="categoryButton" onClick={clickCreatures}>
-              <p>creatures</p>
+        <div className="cardGroupContainer">
+          <div class="item">
+            <div class="card" onClick={clickCreatures}>
+              <img class="card__img" src={cardPattern} alt="Green Forests" />
+              <div class="card__content">
+                <button class="card__btn">
+                  Explore<span>&rarr;</span>
+                </button>
+              </div>
             </div>
-          </Col>
-          <Col>
-            <div className="categoryButton" onClick={clickMonsters}>
-              <p>clickMonsters</p>
+          </div>
+          <div class="item">
+            <div class="card" onClick={clickMonsters}>
+              <img class="card__img" src={cardPattern} alt="Green Forests" />
+
+              <div class="card__content">
+                <button class="card__btn">
+                  Explore<span>&rarr;</span>
+                </button>
+              </div>
             </div>
-          </Col>
-          <Col>
-            <div className="categoryButton" onClick={clickMaterials}>
-              <p>clickMaterials</p>
+          </div>
+          <div class="item">
+            <div class="card" onClick={clickMaterials}>
+              <img class="card__img" src={cardPattern} alt="Green Forests" />
+
+              <div class="card__content">
+                <button class="card__btn">
+                  Explore<span>&rarr;</span>
+                </button>
+              </div>
             </div>
-          </Col>
-          <Col>
-            <div className="categoryButton" onClick={clickEquipment}>
-              <p>clickEquipment</p>
+          </div>
+          <div class="item">
+            <div class="card" onClick={clickEquipment}>
+              <img class="card__img" src={cardPattern} alt="Green Forests" />
+
+              <div class="card__content">
+                <button class="card__btn">
+                  Explore<span>&rarr;</span>
+                </button>
+              </div>
             </div>
-          </Col>
-          <Col>
-            <div className="categoryButton" onClick={clickTreasure}>
-              <p>clickTreasure</p>
+          </div>
+          <div class="item">
+            <div class="card" onClick={clickTreasure}>
+              <img class="card__img" src={cardPattern} alt="Green Forests" />
+
+              <div class="card__content">
+                <button class="card__btn">
+                  Explore<span>&rarr;</span>
+                </button>
+              </div>
             </div>
-          </Col>
-          {/* </CardGroup> */}
-        </Row>
+          </div>
+        </div>
       </div>
       <div className="footer">
-        <p> here goes footer</p>
+        <h4>Here goes footer</h4>
       </div>
     </div>
   );
