@@ -34,18 +34,41 @@ function HomeScreenContainer() {
 
   return (
     <div className="homeScreenContainer">
-      <p>
-        Ailyn is home screen. Home screen should have logo, the five
-        categories/links, the quote, and the footer.
-      </p>
-      <div>
-        <button onClick={clickHome}>Home</button>
-        <button onClick={clickCarousel}>Carousel</button>
-        <button onClick={clickCreatures}>Creatures</button>
-        <button onClick={clickEquipment}>Equipment</button>
-        <button onClick={clickMaterials}>Materials</button>
-        <button onClick={clickMonsters}>Monsters</button>
-        <button onClick={clickTreasure}>Treasure</button>
+      <div className="header">
+        <h1>BOTW Key</h1>
+        <h4>The ultimate guide into Hyrule</h4>
+      </div>
+      <div className="body">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <button onClick={clickCreatures}>Creatures</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <button onClick={clickEquipment}>Equipment</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <button onClick={clickMaterials}>Materials</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <button onClick={clickMonsters}>Monsters</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <button onClick={clickTreasure}>Treasure</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <p> here goes footer</p>
       </div>
     </div>
   );
