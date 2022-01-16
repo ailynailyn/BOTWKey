@@ -65,7 +65,7 @@ function HomeScreenContainer() {
                 class="card__img"
                 src={cardPattern}
                 alt="Category Materials"
-              />{" "}
+              />
               <div class="overlay">MATERIALS</div>
             </div>
           </div>
@@ -75,7 +75,7 @@ function HomeScreenContainer() {
                 class="card__img"
                 src={cardPattern}
                 alt="Category Equipment"
-              />{" "}
+              />
               <div class="overlay">EQUIPMENT</div>
             </div>
           </div>
@@ -85,10 +85,13 @@ function HomeScreenContainer() {
                 class="card__img"
                 src={cardPattern}
                 alt="Category Treasure"
-              />{" "}
+              />
               <div class="overlay">TREASURE</div>
             </div>
           </div>
+        </div>
+        <div className="homeScreenQuote">
+          <h2>Here goes quote</h2>
         </div>
       </div>
       <div className="footer">
