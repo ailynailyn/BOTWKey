@@ -10,11 +10,19 @@ function CarouselContainer(props) {
   const itemId = props.itemId;
   console.log(itemId);
   // Need to pass in only X amount of items to be working with.
-  // Need to set the current one as the active one.
-  // Loop through the passed in data, storing the item id?
 
-  const carouselData = data.creatures;
-  // const itemId = props.itemId;
+  // Determine which category it is based on the itemId
+
+  const carouselData =
+    itemId <= global.CREATURES_MAX
+      ? data.creatures
+      : itemId <= global.MONSTERS_MAX
+      ? data.monsters
+      : itemId <= global.MATERIALS_MAX
+      ? data.materials
+      : itemId <= global.EQUIPMENT_MAX
+      ? data.equipment
+      : data.treasure;
 
   const dataLength = carouselData.length;
 
