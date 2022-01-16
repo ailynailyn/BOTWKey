@@ -3,16 +3,12 @@ import "./HomeScreenContainer.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
+import botwPhoto from "../images/sheikah.jpeg";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function HomeScreenContainer() {
   let navigate = useNavigate();
-  function clickHome() {
-    navigate("/");
-  }
-
-  function clickCarousel() {
-    navigate("/carousel");
-  }
 
   function clickMonsters() {
     navigate("/monsters");
@@ -41,38 +37,35 @@ function HomeScreenContainer() {
         <h4>The ultimate guide into Hyrule</h4>
       </div>
       <div className="body">
-        <CardGroup>
-          <Card onClick={clickCreatures}>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Creatures</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card onClick={clickMonsters}>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Monsters</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card onClick={clickMaterials}>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Materials</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card onClick={clickEquipment}>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Equipment</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card onClick={clickTreasure}>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Treasure</Card.Title>
-            </Card.Body>
-          </Card>
-        </CardGroup>
+        <Row sm={3} xs={1} md={5} className="cardGroupContainer">
+          {/* <CardGroup className="cardGroupContainer"> */}
+          <Col>
+            <div className="categoryButton" onClick={clickCreatures}>
+              <p>creatures</p>
+            </div>
+          </Col>
+          <Col>
+            <div className="categoryButton" onClick={clickMonsters}>
+              <p>clickMonsters</p>
+            </div>
+          </Col>
+          <Col>
+            <div className="categoryButton" onClick={clickMaterials}>
+              <p>clickMaterials</p>
+            </div>
+          </Col>
+          <Col>
+            <div className="categoryButton" onClick={clickEquipment}>
+              <p>clickEquipment</p>
+            </div>
+          </Col>
+          <Col>
+            <div className="categoryButton" onClick={clickTreasure}>
+              <p>clickTreasure</p>
+            </div>
+          </Col>
+          {/* </CardGroup> */}
+        </Row>
       </div>
       <div className="footer">
         <p> here goes footer</p>
