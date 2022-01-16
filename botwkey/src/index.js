@@ -19,37 +19,16 @@ ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<HomeScreenContainer />} />
-      {/* <Route path="/homeContainer" element={<HomeContainer />} /> */}
       <Route path="/creatures" element={<CreaturesContainer />} />
-
+      <Route path="/creatures/:itemId" element={<HomeContainer />} />
       <Route path="/monsters" element={<MonstersContainer />} />
-      {/* <Route
-        path="/monsters/:id"
-        element={<HomeContainer data={data.monsters} />}
-      /> */}
+      <Route path="/monsters/:itemId" element={<HomeContainer />} />
       <Route path="/materials" element={<MaterialsContainer />} />
-      {/* <Route
-        path="/materials/:id"
-        element={<HomeContainer data={data.materials} />}
-      /> */}
+      <Route path="/materials/:itemId" element={<HomeContainer />} />
       <Route path="/equipment" element={<EquipmentContainer />} />
-      {/* <Route
-        path="/equipment/:id"
-        element={<HomeContainer data={data.equipment} />}
-      /> */}
+      <Route path="/equipment/:itemId" element={<HomeContainer />} />
       <Route path="/treasure" element={<TreasureContainer />} />
-      {/* <Route
-        path="/treasure/:id"
-        element={<HomeContainer data={data.treasure} />}
-      /> */}
-      <Route path="/testing/:itemId" element={<HomeContainer />} />
-      <Route
-        exact
-        path="/creatures/:id"
-        render={(props) => (
-          <HomeContainer categoryId={global.CREATURES} {...props} />
-        )}
-      />
+      <Route path="/treasure/:itemId" element={<HomeContainer />} />
     </Routes>
   </Router>,
 
