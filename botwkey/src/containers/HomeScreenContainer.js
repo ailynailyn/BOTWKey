@@ -39,31 +39,21 @@ function HomeScreenContainer() {
         <h4>The ultimate guide into Hyrule</h4>
       </div>
       <div className="body">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <button onClick={clickCreatures}>Creatures</button>
-            </div>
+        <div class="categories">
+          <div class="homeScreenCard">
+            <button onClick={clickCreatures}>Creatures</button>
           </div>
-          <div class="column">
-            <div class="card">
-              <button onClick={clickEquipment}>Equipment</button>
-            </div>
+          <div class="homeScreenCard">
+            <button onClick={clickEquipment}>Equipment</button>
           </div>
-          <div class="column">
-            <div class="card">
-              <button onClick={clickMaterials}>Materials</button>
-            </div>
+          <div class="homeScreenCard">
+            <button onClick={clickMaterials}>Materials</button>
           </div>
-          <div class="column">
-            <div class="card">
-              <button onClick={clickMonsters}>Monsters</button>
-            </div>
+          <div class="homeScreenCard">
+            <button onClick={clickMonsters}>Monsters</button>
           </div>
-          <div class="column">
-            <div class="card">
-              <button onClick={clickTreasure}>Treasure</button>
-            </div>
+          <div class="homeScreenCard">
+            <button onClick={clickTreasure}>Treasure</button>
           </div>
         </div>
       </div>

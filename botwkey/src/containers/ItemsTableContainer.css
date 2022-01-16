@@ -5,4 +5,5 @@
 
 .tableItemCard {
   margin: 1rem;
+  aspect-ratio: 2.5 / 3.5;
 }

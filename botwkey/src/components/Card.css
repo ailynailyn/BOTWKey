@@ -26,6 +26,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
 }
 
 .botw-card-header {
