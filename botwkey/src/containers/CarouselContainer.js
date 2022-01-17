@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../components/Card";
 import "./CarouselContainer.css";
+import CategoryTitle from "../components/CategoryTitle";
+
 import { data } from "../Data";
 
 import { useState } from "react";
@@ -13,16 +15,18 @@ function CarouselContainer(props) {
 
   // Determine which category it is based on the itemId
 
-  const carouselData =
+  var carouselData = {};
+  var category = "";
+  const settingVariables =
     itemId <= global.CREATURES_MAX
-      ? data.creatures
+      ? ((carouselData = data.creatures), (category = "Creatures"))
       : itemId <= global.MONSTERS_MAX
-      ? data.monsters
+      ? ((carouselData = data.monsters), (category = "Monsters"))
       : itemId <= global.MATERIALS_MAX
-      ? data.materials
+      ? ((carouselData = data.materials), (category = "Materials"))
       : itemId <= global.EQUIPMENT_MAX
-      ? data.equipment
-      : data.treasure;
+      ? ((carouselData = data.equipment), (category = "Equipment"))
+      : ((carouselData = data.treasure), (category = "Treasure"));
 
   const dataLength = carouselData.length;
 
@@ -132,6 +136,7 @@ function CarouselContainer(props) {
 
   return (
     <div className="CarouselContainer">
+      <CategoryTitle category={category} />
       <div className="container">
         <div className="background-block"></div>
         <div className="carousel-container">
