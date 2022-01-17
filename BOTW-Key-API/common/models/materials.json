@@ -1,0 +1,46 @@
+{
+  "name": "materials",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "common_locations": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "cooking_effect": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "hearts_recovered": {
+      "type": "number"
+    },
+    "item_id": {
+      "type": "number",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
