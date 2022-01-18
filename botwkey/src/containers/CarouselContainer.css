@@ -57,11 +57,6 @@ article {
   aspect-ratio: 2.5 / 3.5;
 }
 
-.hiddenCard .card {
-  width: 100%;
-  aspect-ratio: 2.5 / 3.5;
-}
-
 .card:hover {
   cursor: pointer;
 }
@@ -76,6 +71,7 @@ article {
   z-index: 1;
   aspect-ratio: 2.5 / 3.5;
   height: auto;
+  font-size: 25%;
 }
 
 .activeCard {
@@ -88,7 +84,16 @@ article {
   height: auto;
   z-index: 2;
   opacity: 0.85;
+  font-size: 60%;
 }
+
+/* .activeCard h5 {
+  font-size: 1.2em;
+}
+
+.activeCard p {
+  font-size: 0.7em;
+} */
 
 .nextCard {
   left: 100%;
@@ -97,6 +102,7 @@ article {
   z-index: 1;
   aspect-ratio: 2.5 / 3.5;
   height: auto;
+  font-size: 25%;
 }
 
 .prevCard .card {
@@ -106,6 +112,10 @@ article {
   object-fit: cover;
   overflow: hidden;
 }
+
+/* .prevCard .footer-title {
+  font-size: 5vw;
+} */
 
 .nextCard .card {
   position: absolute;

@@ -22,11 +22,15 @@ html {
   box-sizing: border-box;
 
   user-select: none;
-  background-image: url(../images/cardPattern.png);
+  background-image: url(../images/card_backside.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
+
+.activeCard .botw-card {
+  background-image: url(../images/cardPattern.png);
 }
 
 .botw-card-header {
@@ -45,7 +49,7 @@ html {
 .botw-card-header p {
   display: inline;
   width: 100vw;
-  font-size: 2.5vw;
+  font-size: 0.8em;
   text-align: left;
   max-height: 100%;
   color: gold;
@@ -118,16 +122,26 @@ html {
   text-align: left;
   word-wrap: break-word;
   width: 100%;
+  margin: 2%;
 }
 
-.footer-text h5 {
+.footer-title {
+  height: 15.78%;
+  font-size: 2em;
   color: gold;
-  margin-bottom: 0;
-  font-size: 1vh;
 }
 
-.footer-text p {
+.footer-description {
   color: white;
-  font-size: 0.3vh;
-  margin-bottom: 2%;
+  font-size: 1em;
+}
+
+.footer-drops {
+  color: white;
+  font-size: 1em;
+}
+
+.footer-locations {
+  color: white;
+  font-size: 1em;
 }
