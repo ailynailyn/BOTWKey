@@ -25,6 +25,10 @@
   height: 80vh;
 }
 
+.offcanvas-categories Button {
+  background: url(../images/card_backside.png) no-repeat center/contain;
+}
+
 .search-bar {
   height: 10vh;
   position: relative;

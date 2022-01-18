@@ -6,7 +6,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 import botwPhoto from "../images/sheikah.jpeg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import cardPattern from "../images/cardPattern.png";
+import card_backside from "../images/card_backside.png";
 
 function HomeScreenContainer() {
   let navigate = useNavigate();
@@ -43,7 +43,7 @@ function HomeScreenContainer() {
             <div class="card" onClick={clickCreatures}>
               <img
                 class="card__img"
-                src={cardPattern}
+                src={card_backside}
                 alt="Category Monsters"
               />
               <div class="overlay">CREATURES</div>
@@ -53,7 +53,7 @@ function HomeScreenContainer() {
             <div class="card" onClick={clickMonsters}>
               <img
                 class="card__img"
-                src={cardPattern}
+                src={card_backside}
                 alt="Category Monsters"
               />
               <div class="overlay">MONSTERS</div>
@@ -63,7 +63,7 @@ function HomeScreenContainer() {
             <div class="card" onClick={clickMaterials}>
               <img
                 class="card__img"
-                src={cardPattern}
+                src={card_backside}
                 alt="Category Materials"
               />
               <div class="overlay">MATERIALS</div>
@@ -73,7 +73,7 @@ function HomeScreenContainer() {
             <div class="card" onClick={clickEquipment}>
               <img
                 class="card__img"
-                src={cardPattern}
+                src={card_backside}
                 alt="Category Equipment"
               />
               <div class="overlay">EQUIPMENT</div>
@@ -83,7 +83,7 @@ function HomeScreenContainer() {
             <div class="card" onClick={clickTreasure}>
               <img
                 class="card__img"
-                src={cardPattern}
+                src={card_backside}
                 alt="Category Treasure"
               />
               <div class="overlay">TREASURE</div>
