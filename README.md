@@ -20,7 +20,7 @@ https://github.com/gadhagod/Hyrule-Compendium-API
 12. Select the connector for mongoDS: MongoDB
 13. Go into MongoDB database to use and click Connect
 14. Click Connect your application
-15. Copy connection string and input password: mongodb+srv://botwkey:sandyluna2022@cluster0.rueff.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+15. Copy connection string and input password, replace "myFirstDatabase" with databae name: mongodb+srv://botwkey:sandyluna2022@cluster0.rueff.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 16. Back in terminal, enter connection string url
 17. Enter host: localhost
 18. Port: 27017
