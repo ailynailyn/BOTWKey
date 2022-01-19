@@ -154,30 +154,29 @@ html {
 }
 
 @media all and (min-width: 400px) {
-  .footer-text {
-    font-size: 0.8em;
+  .botw-card-header p {
+    font-size: 3.5em;
   }
-
-  .footer-title {
+  .footer-text {
     font-size: 1em;
   }
 }
 
 @media all and (min-width: 990px) {
-  .footer-text {
-    font-size: 1em;
+  .botw-card-header p {
+    font-size: 4em;
   }
-  .footer-title {
-    font-size: 1em;
+  .footer-text {
+    font-size: 1.2em;
   }
 }
 
 @media all and (min-width: 1200px) {
-  .footer-text {
-    font-size: 1em;
+  .botw-card-header p {
+    font-size: 4.5em;
   }
-  .footer-title {
-    font-size: 1em;
+  .footer-text {
+    font-size: 1.4em;
   }
 }
 
