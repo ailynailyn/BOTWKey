@@ -6,8 +6,35 @@ const Card = ({
   image,
   description,
   common_locations,
+  drops,
   cardStyle,
 }) => {
+  function dropsContainer() {
+    if (drops) {
+      return (
+        <div>
+          <div className="footer-title">DROPS</div>
+          <div className="footer-drops">
+            Drops some watermelon. Also drops some sugar and ice.
+          </div>
+        </div>
+      );
+    }
+    return;
+  }
+
+  function commonLocationsContainer() {
+    if (common_locations) {
+      return (
+        <div>
+          <div className="footer-title">COMMON LOCATIONS</div>
+          <div className="footer-locations">{common_locations.join(", ")}</div>
+        </div>
+      );
+    }
+    return;
+  }
+
   return (
     <article className={cardStyle}>
       <div
@@ -34,14 +61,8 @@ const Card = ({
           <div className="footer-text">
             <div className="footer-title">DESCRIPTION</div>
             <div className="footer-description">{description}</div>
-            <div className="footer-title">DROPS</div>
-            <div className="footer-drops">
-              Drops some watermelon. Also drops some sugar and ice.
-            </div>
-            <div className="footer-title">COMMON LOCATIONS</div>
-            <div className="footer-locations">
-              {common_locations.join(", ")}
-            </div>
+            {dropsContainer}
+            {commonLocationsContainer}
           </div>
         </div>
       </div>
