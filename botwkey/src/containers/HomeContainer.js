@@ -1,6 +1,7 @@
 import { React } from "react";
 import BOTWNavBar from "./BOTWNavBar";
 import CarouselContainer from "./CarouselContainer";
+import "./HomeContainer.css";
 import { useHistory, useParams } from "react-router-dom";
 
 function HomeContainer() {

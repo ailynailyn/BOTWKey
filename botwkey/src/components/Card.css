@@ -22,23 +22,23 @@ html {
   box-sizing: border-box;
 
   user-select: none;
-  background-image: url(../images/card_backside.png);
+  background-image: url(../images/card_frontside.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
 }
 
-.activeCard .botw-card {
-  background-image: url(../images/cardPattern.png);
-}
-
 .botw-card-header {
   margin: auto;
   margin-top: 5%;
   display: flex;
-  height: 10%;
-  background-color: var(--card-header-bg);
+  height: 12.5%;
+  background-color: transparent;
+  background-image: url(../images/card_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 85%;
 }
 
@@ -56,7 +56,7 @@ html {
 }
 
 .botw-card-middle {
-  height: 48%;
+  height: 39.5%;
   width: 100%;
   margin: auto;
 }
@@ -113,9 +113,13 @@ html {
   margin: auto;
   width: 90%;
   display: flex;
-  margin-bottom: 4.16%;
+  margin-bottom: 11.16%;
   height: 36%;
-  background-color: var(--card-footer-bg);
+  background-color: transparent;
+  background-image: url(../images/card_footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-text {
