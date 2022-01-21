@@ -65,6 +65,7 @@ function BOTWNavBar() {
                 <Button onClick={clickMonsters}>Monsters</Button>
                 <Button onClick={clickTreasure}>Treasure</Button>
               </ButtonGroup>
+              
             </Nav>
             <Form className="d-flex">
               <FormControl

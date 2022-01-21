@@ -26,8 +26,11 @@
 }
 
 .offcanvas-categories Button {
-  background: url(../images/card_backside.png) no-repeat center/contain;
+  background: url(../images/creatures_menu.png) no-repeat center/contain;
 }
+
+
+
 
 .search-bar {
   height: 10vh;
