@@ -42,9 +42,8 @@
 
 .item {
   transform: rotateX(40deg) scale(0.7);
-  background-color: #192734;
+  background-color: transparent;
   border-radius: 0.4rem;
-  overflow: hidden;
   cursor: pointer;
   width: 30%;
   height: 50%;
@@ -63,10 +62,12 @@
   position: relative;
 }
 .card__img {
+  background-color: transparent;
   display: block;
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
+  background-color: transparent;
 }
 
 /* The overlay effect - lays on top of the container and over the image */

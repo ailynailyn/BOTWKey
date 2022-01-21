@@ -48,7 +48,7 @@ function HomeScreenContainer() {
               <img
                 class="card__img"
                 src={card_backside3}
-                alt="Category Monsters"
+                alt="Category Creatures"
               />
               <div class="overlay">CREATURES</div>
             </div>
