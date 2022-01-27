@@ -10,4 +10,8 @@
 .tableItemCard {
   margin: 1rem;
   aspect-ratio: 2.5 / 3.5;
+  color: rgb(252, 200, 30);
+  font: 20px Bookman, serif;
+  text-shadow: 1px 1px #727272;
+  text-transform: capitalize;
 }

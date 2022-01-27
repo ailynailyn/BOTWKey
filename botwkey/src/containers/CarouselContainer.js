@@ -167,6 +167,9 @@ function CarouselContainer(props) {
           })}
         </div>
       </div>
+      <div className="footer">
+        <h4>Contact Us</h4>
+      </div>
     </div>
   );
 }

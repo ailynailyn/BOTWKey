@@ -10,6 +10,9 @@ function EquipmentContainer() {
       <BOTWNavBar />
       <CategoryTitle category="Equipment" />
       <ItemsTableContainer data={data.equipment} />
+      <div className="footer">
+        <h4>Contact Us</h4>
+      </div>
     </div>
   );
 }

@@ -45,7 +45,7 @@ function BOTWNavBar() {
   return (
     <Navbar className="botw-navbar" sticky="top" expand={false}>
       <Container fluid>
-        <Navbar.Brand href="/">BOTW Key</Navbar.Brand>
+        <Navbar.Brand href="/">BOTW Key</Navbar.Brand> 
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"

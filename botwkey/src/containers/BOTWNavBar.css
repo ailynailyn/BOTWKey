@@ -1,10 +1,10 @@
 .botw-navbar {
   margin: 0 auto;
   padding: 0;
-  
+  border: none;
   padding-top: 1rem;
   height: 65px;
-  background-image: url(../images/header_image.png);;
+  background-image: url(../images/header_image.png);
   text-decoration: none;
   color: rgb(252, 200, 30);
   font: 20px Bookman, serif;
@@ -15,10 +15,14 @@
 #offcanvasNavbar {
   height: 100vh;
   overflow: auto;
+  font: 20px Bookman, serif;
+  text-shadow: 1px 1px #727272;
+  background-color: #101742;
 }
 
 .offcanvas-header {
   height: 10vh;
+  background-color: #ffffff;
 }
 
 .offcanvas-body {
@@ -31,7 +35,6 @@
   border: none;
   outline: none;
   background-color: transparent
-  
 }
 
 .offcanvas-categories2 {
