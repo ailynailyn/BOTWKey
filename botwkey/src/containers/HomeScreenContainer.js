@@ -11,6 +11,8 @@ import card_backside2 from "../images/materials_ruppee.png";
 import card_backside3 from "../images/creatures_ruppee.png";
 import card_backside4 from "../images/monsters_ruppee.png";
 import card_backside5 from "../images/treasure_ruppee.png";
+import header_bgimage from "../images/header_image.png";
+import header_logoimage from "../images/homepage_title.png";
 
 function HomeScreenContainer() {
   let navigate = useNavigate();
@@ -38,8 +40,12 @@ function HomeScreenContainer() {
   return (
     <div className="homeScreenContainer">
       <div className="header">
-        <h1>BOTW Key</h1>
-        <h4>The ultimate guide into Hyrule</h4>
+          <img
+            class="header_logoimage"
+            src={header_logoimage}
+            height="400"
+          />
+            <h1 class="header_headline">THE ULTIMATE GUIDE TO UNLOCKING HYRULE</h1>
       </div>
       <div className="body">
         <div className="cardGroupContainer">
@@ -93,9 +99,6 @@ function HomeScreenContainer() {
               <div class="overlay">TREASURE</div>
             </div>
           </div>
-        </div>
-        <div className="homeScreenQuote">
-          <h2>Here goes quote</h2>
         </div>
       </div>
       <div className="footer">

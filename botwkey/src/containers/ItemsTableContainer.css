@@ -1,6 +1,10 @@
 .ItemsTableContainer {
-  width: 75%;
+  width: 100%;
   margin: auto;
+  background-image: url(../images/sheika_bkg_tile.jpg);
+  background-repeat: repeat;
+  background-size: 5%;
+  background-position: center;
 }
 
 .tableItemCard {

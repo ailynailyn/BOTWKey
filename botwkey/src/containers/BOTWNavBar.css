@@ -1,10 +1,15 @@
 .botw-navbar {
-  width: 100%;
   margin: 0 auto;
   padding: 0;
-  width: 75%;
+  
   padding-top: 1rem;
   height: 65px;
+  background-image: url(../images/header_image.png);;
+  text-decoration: none;
+  color: rgb(252, 200, 30);
+  font: 20px Bookman, serif;
+  text-shadow: 1px 1px #727272;
+  
 }
 
 #offcanvasNavbar {
@@ -21,13 +26,56 @@
   justify-content: space-around;
 }
 
-.offcanvas-categories {
-  height: 80vh;
+.offcanvas-categories1 {
+  height: 15vh;
+  border: none;
+  outline: none;
+  background-color: transparent
+  
 }
 
-.offcanvas-categories Button {
+.offcanvas-categories2 {
+  height: 15vh;
+  border: none;
+  background-color: transparent
+}
+
+.offcanvas-categories3 {
+  height: 15vh;
+  background-color: transparent
+}
+
+.offcanvas-categories4 {
+  height: 15vh;
+  background-color: transparent
+}
+  
+  .offcanvas-categories5 {
+    height: 15vh;
+    background-color: transparent
+}
+
+.offcanvas-categories1 Button {
   background: url(../images/creatures_menu.png) no-repeat center/contain;
 }
+
+.offcanvas-categories2 Button {
+  background: url(../images/equipment_menu.png) no-repeat center/contain;
+}
+
+.offcanvas-categories3 Button {
+  background: url(../images/materials_menu.png) no-repeat center/contain;
+}
+
+.offcanvas-categories4 Button {
+  background: url(../images/monsters_menu.png) no-repeat center/contain;
+}
+
+.offcanvas-categories5 Button {
+  background: url(../images/treasure_menu.png) no-repeat center/contain;
+}
+
+
 
 
 

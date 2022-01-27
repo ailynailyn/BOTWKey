@@ -1,5 +1,9 @@
 .categoryTitle {
   margin: auto;
-  width: 85%;
+  padding: 1rem;
   text-align: center;
+  color: rgb(252, 200, 30);
+  font: 20px Bookman, serif;
+  text-shadow: 1px 1px #727272;
+  background-color: #101742;
 }
