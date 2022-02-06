@@ -63,20 +63,20 @@ function BOTWNavBar() {
           </Offcanvas.Header>
           <Offcanvas.Body className="offcanvas-body">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <ButtonGroup vertical className="offcanvas-categories1">
-                <Button onClick={clickCreatures}>Creatures</Button>
+              <ButtonGroup vertical className="offcanvas-categories-creatures">
+                <Button onClick={clickCreatures}>CREATURES</Button>
               </ButtonGroup>
-              <ButtonGroup vertical className="offcanvas-categories2">
-                <Button onClick={clickEquipment}>Equipment</Button>
+              <ButtonGroup vertical className="offcanvas-categories-equipment">
+                <Button onClick={clickEquipment}>EQUIPMENT</Button>
               </ButtonGroup>
-              <ButtonGroup vertical className="offcanvas-categories3">
-                <Button onClick={clickMaterials}>Materials</Button>
+              <ButtonGroup vertical className="offcanvas-categories-materials">
+                <Button onClick={clickMaterials}>MATERIALS</Button>
               </ButtonGroup>
-              <ButtonGroup vertical className="offcanvas-categories4">
-                <Button onClick={clickMonsters}>Monsters</Button>
+              <ButtonGroup vertical className="offcanvas-categories-monsters">
+                <Button onClick={clickMonsters}>MONSTERS</Button>
               </ButtonGroup>
-              <ButtonGroup vertical className="offcanvas-categories5">
-                <Button onClick={clickTreasure}>Treasure</Button>
+              <ButtonGroup vertical className="offcanvas-categories-treasure">
+                <Button onClick={clickTreasure}>TREASURE</Button>
               </ButtonGroup>
             </Nav>
             <Form className="d-flex">

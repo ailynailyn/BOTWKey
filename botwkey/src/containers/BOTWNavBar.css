@@ -30,52 +30,61 @@
   justify-content: space-around;
 }
 
-.offcanvas-categories1 {
+.offcanvas-categories-creatures {
   height: 15vh;
   border: none;
-  outline: none;
-  background-color: transparent
+  background-color: transparent;
+  font: 20px Monaco, monospace;
 }
 
-.offcanvas-categories2 {
+.offcanvas-categories-equipment {
   height: 15vh;
   border: none;
-  background-color: transparent
+  background-color: transparent;
+  font: 20px Monaco, monospace;
 }
 
-.offcanvas-categories3 {
+.offcanvas-categories-materials {
   height: 15vh;
-  background-color: transparent
+  background-color: transparent;
+  font: 20px Monaco, monospace;
 }
 
-.offcanvas-categories4 {
+.offcanvas-categories-monsters {
   height: 15vh;
-  background-color: transparent
+  background-color: transparent;
+  font: 20px Monaco, monospace;
 }
   
-  .offcanvas-categories5 {
+  .offcanvas-categories-treasure {
     height: 15vh;
-    background-color: transparent
+    background-color: transparent;
+    font: 20px Monaco, monospace;
 }
 
-.offcanvas-categories1 Button {
+.offcanvas-categories-creatures Button {
   background: url(../images/creatures_menu.png) no-repeat center/contain;
+  border: none;
 }
 
-.offcanvas-categories2 Button {
+.offcanvas-categories-equipment Button {
   background: url(../images/equipment_menu.png) no-repeat center/contain;
+  border: none;
 }
 
-.offcanvas-categories3 Button {
+.offcanvas-categories-materials Button {
   background: url(../images/materials_menu.png) no-repeat center/contain;
+  border: none;
 }
 
-.offcanvas-categories4 Button {
+.offcanvas-categories-monsters Button {
   background: url(../images/monsters_menu.png) no-repeat center/contain;
+  border: none;
 }
 
-.offcanvas-categories5 Button {
+.offcanvas-categories-treasure Button {
   background: url(../images/treasure_menu.png) no-repeat center/contain;
+  border: none;
 }
 
 
@@ -84,6 +93,7 @@
 
 
 .search-bar {
+  margin-top: 10rem;
   height: 10vh;
   position: relative;
   display: inline-flex;

@@ -195,7 +195,7 @@
   transition: 0.5s ease;
   opacity: 0;
   color: rgb(255, 255, 255);
-  font: 20px Bookman, serif;
+  font: 25px Monaco, monospace;
   padding: 10px;
   text-align: center;
 }
