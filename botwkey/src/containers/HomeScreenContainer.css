@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  height: 10%;
+  height: 100%;
 }
 
 .item {
@@ -73,6 +73,112 @@
   z-index: 400;
 }
 
+
+.item_treasure {
+  width: 170px;
+  height: 266px;
+  transform: rotateX(0deg) scale(0.9);
+  background-image: url(../images/treasure_ruppee.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.5s all ease;
+}
+
+.item_treasure:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s all ease;
+  z-index: 400;
+  background-image: url(../images/treasure_gif.gif);
+}
+
+.item_monsters {
+  width: 170px;
+  height: 266px;
+  transform: rotateX(0deg) scale(0.9);
+  background-image: url(../images/monsters_ruppee.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.5s all ease;
+}
+
+.item_monsters:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s all ease;
+  z-index: 400;
+  background-image: url(../images/monsters_gif.gif);
+}
+
+.item_equipment {
+  width: 170px;
+  height: 266px;
+  transform: rotateX(0deg) scale(0.9);
+  background-image: url(../images/equipment_ruppee.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.5s all ease;
+}
+
+.item_equipment:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s all ease;
+  z-index: 400;
+  background-image: url(../images/equipment_gif.gif);
+}
+
+.item_materials {
+  width: 170px;
+  height: 266px;
+  transform: rotateX(0deg) scale(0.9);
+  background-image: url(../images/materials_ruppee.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.5s all ease;
+}
+
+.item_materials:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s all ease;
+  z-index: 400;
+  background-image: url(../images/materials_gif.gif);
+}
+
+.item_creatures {
+  width: 170px;
+  height: 266px;
+  transform: rotateX(0deg) scale(0.9);
+  background-image: url(../images/creatures_ruppee.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.5s all ease;
+}
+
+.item_creatures:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s all ease;
+  z-index: 400;
+  background-image: url(../images/creatures_gif.gif);
+}
+
 .card {
   position: relative;
   background-color: transparent;
@@ -84,10 +190,8 @@
 
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
-  position: absolute;
-  bottom: 0;
+  margin-top: 18rem;
   width: 100%;
-  height: 100%;
   transition: 0.5s ease;
   opacity: 0;
   color: rgb(255, 255, 255);
@@ -97,7 +201,23 @@
 }
 
 /* When you mouse over the container, fade in the overlay title */
-.item:hover .overlay {
+.item_creatures:hover .overlay {
+  opacity: 1;
+}
+
+.item_monsters:hover .overlay {
+  opacity: 1;
+}
+
+.item_materials:hover .overlay {
+  opacity: 1;
+}
+
+.item_equipment:hover .overlay {
+  opacity: 1;
+}
+
+.item_treasure:hover .overlay {
   opacity: 1;
 }
 
