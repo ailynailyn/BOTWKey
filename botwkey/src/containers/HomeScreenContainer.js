@@ -1,5 +1,4 @@
 import React from "react";
-import "./HomeScreenContainer.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -13,6 +12,7 @@ import card_backside4 from "../images/monsters_ruppee.png";
 import card_backside5 from "../images/treasure_ruppee.png";
 import header_bgimage from "../images/header_image.png";
 import header_logoimage from "../images/homepage_title.png";
+import "./HomeScreenContainer.css";
 
 function HomeScreenContainer() {
   let navigate = useNavigate();
@@ -50,7 +50,7 @@ function HomeScreenContainer() {
       <div className="body">
         <div className="cardGroupContainer">
           <div class="item">
-            <div class="card" onClick={clickCreatures}>
+            <div class="ruppee-card" onClick={clickCreatures}>
               <img
                 class="card__img"
                 src={card_backside3}
@@ -60,7 +60,7 @@ function HomeScreenContainer() {
             </div>
           </div>
           <div class="item">
-            <div class="card" onClick={clickMonsters}>
+            <div class="ruppee-card" onClick={clickMonsters}>
               <img
                 class="card__img"
                 src={card_backside4}
@@ -70,7 +70,7 @@ function HomeScreenContainer() {
             </div>
           </div>
           <div class="item">
-            <div class="card" onClick={clickMaterials}>
+            <div class="ruppee-card" onClick={clickMaterials}>
               <img
                 class="card__img"
                 src={card_backside2}
@@ -80,7 +80,7 @@ function HomeScreenContainer() {
             </div>
           </div>
           <div class="item">
-            <div class="card" onClick={clickEquipment}>
+            <div class="ruppee-card" onClick={clickEquipment}>
               <img
                 class="card__img"
                 src={card_backside1}
@@ -90,7 +90,7 @@ function HomeScreenContainer() {
             </div>
           </div>
           <div class="item">
-            <div class="card" onClick={clickTreasure}>
+            <div class="ruppee-card" onClick={clickTreasure}>
               <img
                 class="card__img"
                 src={card_backside5}
