@@ -20,7 +20,7 @@
 
 .header {
   margin: auto;
-  height: 60vh;
+  height: 30vh;
   background-image: url(../images/header_image.png);
   color: rgb(252, 200, 30);
   font: 20px Bookman, serif;
@@ -28,7 +28,7 @@
 }
 
 .header_headline {
-
+  height: 10vh;
   padding: 2rem;
   background-color: #101742;
   display: flex;
@@ -222,22 +222,79 @@
 }
 
 @media (max-width: 800px) {
-  .item {
+  .item_creatures {
     height: 30%;
     width: 45%;
   }
 }
 
 @media (max-width: 400px) {
-  .item {
+  .item_creatures {
     height: 20%;
     width: 90%;
   }
+}
 
-  .homeScreenContainer {
-    overflow: scroll;
+@media (max-width: 800px) {
+  .item_monsters {
+    height: 30%;
+    width: 45%;
   }
 }
+
+@media (max-width: 400px) {
+  .item_monsters {
+    height: 20%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .item_equipment {
+    height: 30%;
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  .item_equipment {
+    height: 20%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .item_materials {
+    height: 30%;
+    width: 45%;
+  }
+}
+  
+@media (max-width: 400px) {
+  .item_materials {
+    height: 20%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .item_treasure {
+    height: 30%;
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  .item_treasure {
+    height: 20%;
+    width: 90%;
+  }
+}
+
+.homeScreenContainer {
+  overflow: scroll;
+}
+
 
 @media (max-height: 680px) {
   .item {
@@ -270,6 +327,5 @@
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
   border-radius: 0.25rem;
 }

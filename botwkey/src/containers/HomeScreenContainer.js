@@ -44,9 +44,9 @@ function HomeScreenContainer() {
           <img
             class="header_logoimage"
             src={header_logoimage}
-            height="400"
+            height="100%"
           />
-            <h1 class="header_headline">THE ULTIMATE GUIDE TO UNLOCKING HYRULE</h1>
+            <h3 class="header_headline">THE ULTIMATE GUIDE TO UNLOCKING HYRULE</h3>
       </div>
       <div className="body">
         <div className="cardGroupContainer">
