@@ -3,26 +3,35 @@
   padding: 0;
   border: none;
   padding-top: 1rem;
-  height: 65px;
+  height: 10vh;
   background-image: url(../images/header_image.png);
   text-decoration: none;
   color: rgb(252, 200, 30);
   font: 20px Bookman, serif;
   text-shadow: 1px 1px #727272;
-  
 }
+
+#botw-navbar .navbar-nav .navbar-link {
+  color:  rgb(252, 200, 30);
+}
+
+
 
 #offcanvasNavbar {
   height: 100vh;
   overflow: auto;
   font: 20px Bookman, serif;
   text-shadow: 1px 1px #727272;
-  background-color: #101742;
+  background-image: url(../images/sheika_bkg_tile.jpg);
+  background-repeat: repeat;
+  background-size: 13%;
+  background-position: center;
 }
 
 .offcanvas-header {
   height: 10vh;
   background-color: #ffffff;
+  background-image: url(../images/header_image.png);
 }
 
 .offcanvas-body {
@@ -86,6 +95,7 @@
   background: url(../images/treasure_menu.png) no-repeat center/contain;
   border: none;
 }
+
 
 
 

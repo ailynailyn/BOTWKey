@@ -223,76 +223,72 @@
 
 @media (max-width: 800px) {
   .item_creatures {
-    height: 30%;
-    width: 45%;
+    height: 50%;
+    width: auto;
   }
 }
 
 @media (max-width: 400px) {
   .item_creatures {
-    height: 20%;
-    width: 90%;
+    height: 25%;
+    width: auto;
   }
 }
 
 @media (max-width: 800px) {
   .item_monsters {
-    height: 30%;
-    width: 45%;
+    height: 50%;
+    width: auto;
   }
 }
 
 @media (max-width: 400px) {
   .item_monsters {
-    height: 20%;
-    width: 90%;
+    height: 25%;
+    width: auto;
   }
 }
 
 @media (max-width: 800px) {
   .item_equipment {
-    height: 30%;
-    width: 45%;
+    height: 50%;
+    width: auto;
   }
 }
 
 @media (max-width: 400px) {
   .item_equipment {
-    height: 20%;
-    width: 90%;
+    height: 25%;
+    width: auto;
   }
 }
 
 @media (max-width: 800px) {
   .item_materials {
-    height: 30%;
-    width: 45%;
+    height: 50%;
+    width: auto;
   }
 }
   
 @media (max-width: 400px) {
   .item_materials {
-    height: 20%;
-    width: 90%;
+    height: 25%;
+    width: auto;
   }
 }
 
 @media (max-width: 800px) {
   .item_treasure {
-    height: 30%;
-    width: 45%;
+    height: 50%;
+    width: auto;
   }
 }
 
 @media (max-width: 400px) {
   .item_treasure {
-    height: 20%;
-    width: 90%;
+    height: 25%;
+    width: auto;
   }
-}
-
-.homeScreenContainer {
-  overflow: scroll;
 }
 
 
@@ -320,9 +316,11 @@
 }
 
 .ruppee-card {
+  width: inherit;
   background-color: transparent;    
-  position: relative;
+  position: fixed;
   display: flex;
+  bottom: 0px;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
